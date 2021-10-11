@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
+import configData from "./firebase-config.json";
 
 import firebase from 'firebase/app';
 import 'firebase/firestore';
@@ -9,15 +10,7 @@ import 'firebase/analytics';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
-firebase.initializeApp({
-  apiKey: "AIzaSyBtbAMtTl_aXCw0MgwJJJ9Rm909VYpj2rc",
-  authDomain: "react-668ef.firebaseapp.com",
-  projectId: "react-668ef",
-  storageBucket: "react-668ef.appspot.com",
-  messagingSenderId: "45094967745",
-  appId: "1:45094967745:web:5ea713fec6b857e3467740",
-  measurementId: "G-98MRV46C35"
-})
+firebase.initializeApp(configData);
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
