@@ -40,6 +40,9 @@
             "button": "true",
             "submit": "true",
             "reset": "true"
-          }]
+            
+          }],
+          "no-console": "off"
+
     }
 }

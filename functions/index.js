@@ -1,4 +1,3 @@
-
 const functions = require('firebase-functions');
 const Filter = require('bad-words');
 const admin = require('firebase-admin');
@@ -6,8 +5,6 @@ const admin = require('firebase-admin');
 admin.initializeApp();
 
 const db = admin.firestore();
-
-
 
 exports.detectEvilUsers = functions.firestore
   .document('messages/{msgId}')
@@ -31,5 +28,3 @@ exports.detectEvilUsers = functions.firestore
       await userRef.set({ msgCount: (userData.msgCount || 0) + 1 });
     }
   });
-
-  
