@@ -10,6 +10,12 @@ import PropTypes from 'prop-types';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
+
+
+
+
+
+
 firebase.initializeApp({
   apiKey: 'AIzaSyBtbAMtTl_aXCw0MgwJJJ9Rm909VYpj2rc',
   authDomain: 'react-668ef.firebaseapp.com',
